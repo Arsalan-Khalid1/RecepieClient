@@ -3,12 +3,6 @@
     <app-recepie-list></app-recepie-list>
   </div>
   <div class="col-md-7">
-    <app-recepie-detail
-    *ngIf="recipeSelected; else info"
-    [recipe]="recipeSelected"></app-recepie-detail>
-    <ng-template #info>
-      <p>Please select a recipe</p>
-    </ng-template>
-
+    <router-outlet></router-outlet>
   </div>
 </div>

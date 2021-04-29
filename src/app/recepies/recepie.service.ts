@@ -32,6 +32,10 @@ export class RecipeSerive {
     return this.recipes.slice();
   };
 
+  getRecipeId(index: number){
+    return this.recipes[index];
+  }
+
   addIngToSl(ingredient: Ingredient[])
   {
     this.slService.ingAdded(ingredient);
